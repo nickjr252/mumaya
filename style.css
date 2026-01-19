@@ -194,7 +194,7 @@ img {
 }
 
 /* TESTIMONIALS */
-.testimonials {
+/*.testimonials {
     background: #f8f8f8;
     padding: 3rem 1.5rem;
     text-align: center;
@@ -215,7 +215,7 @@ img {
 blockquote {
     font-style: italic;
     margin-top: 0.5rem;
-}
+}*/
 
 /* CONTACT */
 .contact-info {
@@ -345,12 +345,12 @@ footer {
 /* Mobile logo */
 @media (max-width: 768px) {
     .logo img {
-        height: 45px;
+        height: 60px;
     }
 }
 
 .footer-logo {
-    height: 60px;
+    height: 45px;
     margin-bottom: 0.5rem;
 }
 
@@ -408,4 +408,5 @@ footer {
         font-size: 0.95rem;
     }
 }
+
 
