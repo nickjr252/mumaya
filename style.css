@@ -243,7 +243,7 @@ img {
 
 /* responsive */
 @media (max-width: 768px) {
-  .hero.slider .slide img { height: 30vh; }
+  .hero.slider .slide img { height: 70vh; }
 }
 @media (max-width: 480px) {
   .hero.slider .slide img { height: 60vh; }
@@ -497,6 +497,7 @@ footer {
         font-size: 0.95rem;
     }
 }
+
 
 
 
