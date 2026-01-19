@@ -131,16 +131,24 @@ img {
 /* HERO */
 .hero {
     position: relative;
+    /* Make hero always span the full viewport height */
+    min-height: 100vh;
+    height: 100vh;
+    height: 100svh; /* preferred on mobile to account for UI chrome */
+    overflow: hidden;
 }
 
+/* For standard hero image (non-slider) make the image cover the entire hero */
 .hero img {
     width: 100%;
-    height: auto;
-    max-height: 100vh;
-    object-fit: contain;
+    /* Force full viewport height so the image covers the whole hero section */
+    height: 100vh;
+    height: 100svh;
+    object-fit: cover;
     display: block;
 }
 
+/* Keep overlay text centered and readable */
 .hero-text {
     position: absolute;
     inset: 0;
@@ -148,10 +156,11 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.35); /* slightly transparent so image shows through */
     color: #fff;
     text-align: center;
     padding: 1rem;
+    z-index: 10;
 }
 
 .hero-text h1 {
@@ -167,7 +176,10 @@ img {
 .hero.slider {
   position: relative;
   overflow: hidden;
-  min-height: 60vh;
+  /* full viewport height for slider */
+  min-height: 100vh;
+  height: 100vh;
+  height: 100svh;
 }
 
 .hero.slider .slides {
@@ -182,11 +194,12 @@ img {
   flex-shrink: 0;
 }
 
+/* Make each slide image cover the full viewport */
 .hero.slider .slide img {
   width: 100%;
-  height: 60vh;
-  max-height:100vh/* match existing hero height */
-  object-fit: contain;
+  height: 100vh;
+  height: 100svh;
+  object-fit: cover;
   display: block;
 }
 
@@ -245,11 +258,13 @@ img {
 }
 
 /* responsive */
+/* Removed fixed shorter heights so images continue to cover viewport on mobile.
+   If you prefer a shorter hero on small screens, change 100svh to 60svh below. */
 @media (max-width: 768px) {
-  .hero.slider .slide img { height: 70vh; }
+  .hero.slider .slide img { height: 100vh; height: 100svh; }
 }
 @media (max-width: 480px) {
-  .hero.slider .slide img { height: 60vh; }
+  .hero.slider .slide img { height: 100vh; height: 100svh; }
   .slider-btn { font-size: 1.2rem; padding: 0.35rem 0.5rem; }
 }
 
@@ -343,8 +358,10 @@ footer {
         gap: 0.8rem;
     }
 
+    /* ensure hero stays full viewport even on smaller screens */
     .hero img {
-        height: 55vh;
+        height: 100vh;
+        height: 100svh;
     }
 
     .hero-text h1 {
@@ -500,20 +517,3 @@ footer {
         font-size: 0.95rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
