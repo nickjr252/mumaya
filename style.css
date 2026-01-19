@@ -45,7 +45,7 @@ img {
 }*/
 
 /* NAVBAR */
-/*.navbar {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -59,7 +59,7 @@ img {
 }
 
 /* LINKS (DESKTOP) */
-/*.nav-links {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -72,7 +72,7 @@ img {
 }
 
 /* HAMBURGER */
-/*.menu-toggle {
+.menu-toggle {
     display: none;
     font-size: 2rem;
     color: #fff;
@@ -82,7 +82,7 @@ img {
 /* ===================== */
 /* 📱 MOBILE FIX */
 /* ===================== */
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
 
     .menu-toggle {
         display: block;
@@ -111,131 +111,6 @@ img {
     }
 }
 
-
-     /* Basic navbar layout */
-        .navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between; /* logo left, hamburger right */
-            padding: 0.5rem 1rem;
-            position: relative;
-            z-index: 1000;
-        }
-
-        .logo img {
-            height: 56px;
-            display: block;
-        }
-
-        .menu-toggle {
-            font-size: 1.6rem;
-            cursor: pointer;
-            background: transparent;
-            border: none;
-            padding: 0.25rem 0.5rem;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Desktop nav (default) */
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            margin: 0;
-            padding: 0;navbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between; /* logo left, hamburger right */
-            padding: 0.5rem 1rem;
-            position: relative;
-            z-index: 1000;
-        }
-
-        .logo img {
-            height: 56px;
-            display: block;
-        }
-
-        .menu-toggle {
-            font-size: 1.6rem;
-            cursor: pointer;
-            background: transparent;
-            border: none;
-            padding: 0.25rem 0.5rem;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Desktop nav (default) */
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            margin: 0;
-            padding: 0;
-        }
-        .nav-links a {
-        }
-        .nav-links a {
-            text-decoration: none;
-            padding: 0.5rem 0.75rem;
-            display: inline-block;
-        }
-
-        /* Mobile behavior: hide the inline nav and use a sliding panel from the left */
-        @media (max-width: 900px) {
-            /* keep hamburger visible on the right */
-            .menu-toggle {
-                /* ensure it stays at the far right in the navbar */
-                order: 3;
-            }
-
-            /* Make nav-links a fixed panel that slides in from the left */
-            .nav-links {
-                position: fixed;
-                top: 0;
-                left: 0;
-                height: 100vh;
-                width: 260px;
-                max-width: 80%;
-                background: white;
-                box-shadow: 2px 0 12px rgba(0,0,0,0.15);
-                flex-direction: column;
-                padding-top: 3.5rem;
-                padding-left: 1rem;
-                transform: translateX(-100%); /* hidden off-canvas to the left */
-                transition: transform 270ms ease-in-out;
-                gap: 0.5rem;
-                z-index: 1100;
-            }
-
-            .nav-links.open {
-                transform: translateX(0); /* slide in */
-            }
-
-            /* Hide the inline horizontal nav to avoid duplicates */
-            .nav-links li {
-                margin-bottom: 0.25rem;
-            }
-        }
-
-        /* Optional: small overlay when menu open (added by JS) */
-        .menu-overlay {
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.35);
-            z-index: 1050;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 200ms ease;
-        }
-        .menu-overlay.visible {
-            opacity: 1;
-            visibility: visible;
-        }
 
 
 /* HERO */
@@ -515,6 +390,7 @@ footer {
         font-size: 0.95rem;
     }
 }
+
 
 
 
