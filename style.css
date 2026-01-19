@@ -18,7 +18,7 @@ img {
 }
 
 /* NAVBAR */
-.navbar {
+/*.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,7 +42,75 @@ img {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
+}*/
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    padding: 0.8rem 1.5rem;
+    position: relative;
 }
+
+.logo img {
+    height: 50px;
+}
+
+/* LINKS (DESKTOP) */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ===================== */
+/* 📱 MOBILE FIX */
+/* ===================== */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #222;
+        padding: 1rem 0;
+        z-index: 1000;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 0.8rem 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
 
 /* HERO */
 .hero {
@@ -321,4 +389,5 @@ footer {
         font-size: 0.95rem;
     }
 }
+
 
