@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+  <!--  <header>
     <nav class="navbar">
         <!-- Logo -->
-        <a href="index.html" class="logo">
+       <!-- <a href="index.html" class="logo">
             <img src="image/logo.png" alt="Mumaya Beauty Care Logo">
         </a>
 
         <!-- Hamburger -->
-        <div class="menu-toggle" id="menuToggle">
+       <!-- <div class="menu-toggle" id="menuToggle">
             &#9776;
         </div>
 
         <!-- Links -->
-        <ul class="nav-links" id="navLinks">
+     <!--   <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="price.html">Price Menu</a></li>
@@ -28,7 +28,31 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+</header>-->
+
+    <nav class="navbar" aria-label="Main navigation">
+        <!-- Logo (left) -->
+        <a href="index.html" class="logo" aria-label="Mumaya Beauty Care home">
+            <img src="image/logo.png" alt="Mumaya Beauty Care Logo">
+        </a>
+
+        <!-- Links (off-canvas on mobile; inline on desktop) -->
+        <ul class="nav-links" id="navLinks" role="menu" aria-hidden="true">
+            <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+            <li role="none"><a role="menuitem" href="services.html">Services</a></li>
+            <li role="none"><a role="menuitem" href="price.html">Price Menu</a></li>
+            <li role="none"><a role="menuitem" href="gallery.html">Gallery</a></li>
+            <li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger (right) -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">
+            &#9776;
+        </button>
+    </nav>
 </header>
+
+
 
 
     <section class="hero">
@@ -81,4 +105,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
