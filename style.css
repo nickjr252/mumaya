@@ -49,7 +49,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #222;
+    background: #3cdfff;
     padding: 0.8rem 1.5rem;
     position: relative;
 }
@@ -389,5 +389,6 @@ footer {
         font-size: 0.95rem;
     }
 }
+
 
 
