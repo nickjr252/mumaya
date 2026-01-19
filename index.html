@@ -31,14 +31,37 @@
 </header>
 
 
-    <section class="hero">
+ <!--   <section class="hero">
         <img src="assets/hero.jpg" alt="Salon hero image">
         <div class="hero-text">
             <h1>Passion • Reliability • Service</h1>
             <p>Your Natural Beauty Our Priority</p>
             <a href="services.html" class="btn">Learn More</a>
         </div>
-    </section>
+    </section>-->
+
+    <!-- REPLACE your existing <section class="hero">...</section> with this slider markup -->
+<section class="hero slider">
+  <div class="slides">
+    <div class="slide"><img src="assets/hero1.jpg" alt="Salon hero 1"></div>
+    <div class="slide"><img src="assets/hero2.jpg" alt="Salon hero 2"></div>
+    <div class="slide"><img src="assets/hero3.jpg" alt="Salon hero 3"></div>
+    <div class="slide"><img src="assets/hero4.jpg" alt="Salon hero 4"></div>
+    <!-- add more <div class="slide">...</div> here if you want more than 4 -->
+  </div>
+
+  <button class="slider-btn prev" aria-label="Previous slide">&#10094;</button>
+  <button class="slider-btn next" aria-label="Next slide">&#10095;</button>
+
+  <div class="dots" aria-hidden="false"></div>
+
+  <div class="hero-text">
+    <h1>Passion • Reliability • Service</h1>
+    <p>Your Natural Beauty Our Priority</p>
+    <a href="services.html" class="btn">Learn More</a>
+  </div>
+</section>
+
 
     <main>
         <section class="services-overview">
@@ -81,6 +104,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
