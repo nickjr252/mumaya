@@ -84,9 +84,24 @@ img {
 /* ===================== */
 @media (max-width: 768px) {
 
+    /* keep navbar as relative so absolute positioning of the toggle works */
+    .navbar {
+        position: relative;
+    }
+
     .menu-toggle {
         display: block;
         z-index: 1001;
+        /* place the toggle on the far right and vertically center it */
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* ensure logo stays to the left; allow it to sit inline while toggle is absolute */
+    .logo {
+        margin-right: auto;
     }
 
     .nav-links {
@@ -222,9 +237,12 @@ footer {
 /* ===================== */
 @media (max-width: 768px) {
 
+    /* Keep the navbar items visually on the same horizontal line:
+       logo will remain on the left; the menu toggle is absolutely positioned to the right. */
     .navbar {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
     }
 
     .nav-links {
@@ -390,8 +408,3 @@ footer {
         font-size: 0.95rem;
     }
 }
-
-
-
-
-
