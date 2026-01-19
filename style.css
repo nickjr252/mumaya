@@ -165,7 +165,7 @@ img {
 .hero.slider {
   position: relative;
   overflow: hidden;
-  min-height: 60vh;
+  min-height: 50vh;
 }
 
 .hero.slider .slides {
@@ -497,6 +497,7 @@ footer {
         font-size: 0.95rem;
     }
 }
+
 
 
 
