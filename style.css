@@ -696,6 +696,8 @@ footer {
     margin: auto;
     padding: 3rem 2rem;
     border-radius: 16px;
+    position: relative;
+    z-index: 2;
 }
 
 /* SERVICES GRID */
@@ -724,6 +726,51 @@ footer {
         padding: 2rem 1.5rem;
     }
 }
+
+/* FALLING LEAVES ANIMATION */
+.leaves {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.leaves span {
+    position: absolute;
+    top: -10%;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/leaf.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    animation: fall linear infinite;
+}
+
+/* Different speeds & positions */
+.leaves span:nth-child(1) { left: 10%; animation-duration: 12s; }
+.leaves span:nth-child(2) { left: 25%; animation-duration: 15s; }
+.leaves span:nth-child(3) { left: 45%; animation-duration: 10s; }
+.leaves span:nth-child(4) { left: 65%; animation-duration: 14s; }
+.leaves span:nth-child(5) { left: 80%; animation-duration: 11s; }
+.leaves span:nth-child(6) { left: 90%; animation-duration: 16s; }
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
 
 
 
