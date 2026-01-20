@@ -770,6 +770,28 @@ footer {
     }
 }
 
+/* SERVICE CARD LINK */
+.service-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.service-link:hover .service-card {
+    transform: translateY(-6px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Highlight when arriving */
+.price-image-card:target {
+    outline: 4px solid rgba(120, 200, 160, 0.7);
+    box-shadow: 0 0 40px rgba(120, 200, 160, 0.6);
+}
+
+
 
 
 
