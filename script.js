@@ -86,6 +86,27 @@ document.addEventListener('DOMContentLoaded', function () {
   // optional: make slider responsive to resize (keeps CSS percentages so no extra code needed)
 });
 
+function sendToWhatsApp() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const phoneNumber = "260774336596"; // 🔁 replace with your WhatsApp number
+
+    const text =
+        `Hello Mumaya Beauty Care,%0A%0A` +
+        `Name: ${name}%0A` +
+        `Email: ${email}%0A` +
+        `Subject: ${subject}%0A%0A` +
+        `Message:%0A${message}`;
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
+
+    window.open(whatsappURL, "_blank");
+}
+
+
 
 
 
