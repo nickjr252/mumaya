@@ -739,8 +739,8 @@ footer {
 .leaves span {
     position: absolute;
     top: -10%;
-    width: 55px;
-    height: 55px;
+    width: 65px;
+    height: 65px;
     background-image: url("image/leaf.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -769,6 +769,7 @@ footer {
         opacity: 0;
     }
 }
+
 
 
 
