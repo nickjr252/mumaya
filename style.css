@@ -677,6 +677,53 @@ footer {
     }
 }
 
+/* SERVICES BACKGROUND SECTION */
+.services-section {
+    background-image: url("../images/services-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem 1.5rem;
+    position: relative;
+}
+
+/* Soft overlay for readability */
+.services-overlay {
+    background: rgba(255, 255, 255, 0.85);
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+}
+
+/* SERVICES GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.service-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(120, 200, 160, 0.3);
+    text-align: center;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-overlay {
+        padding: 2rem 1.5rem;
+    }
+}
+
+
 
 
 
