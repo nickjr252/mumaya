@@ -87,29 +87,37 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function sendToWhatsApp() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-    const phoneNumber = "260774336596"; // 🔁 replace with your WhatsApp number
+    if (!name || !message) {
+        alert("Please enter your name and message.");
+        return;
+    }
 
-    const text =
-        `Hello Mumaya Beauty Care,%0A%0A` +
-        `Name: ${name}%0A` +
-        `Email: ${email}%0A` +
-        `Subject: ${subject}%0A%0A` +
-        `Message:%0A${message}`;
+    const phoneNumber = "260774336596"; // 🔁 replace with your real WhatsApp number
 
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${text}`;
+    const text = `
+Hello Mumaya Beauty Care,
+
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+
+Message:
+${message}
+    `;
+
+    const encodedText = encodeURIComponent(text);
+
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedText}`;
 
     window.open(whatsappURL, "_blank");
 }
 
-if (!name || !message) {
-    alert("Please enter your name and message.");
-    return;
-}
+
 
 
 
