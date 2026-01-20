@@ -948,16 +948,7 @@ html {
 }
 
 
-.nav-menu li a {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
 
-.nav-menu li a i {
-    color: #78c8a0;
-    font-size: 0.9rem;
-}
 
 
 
