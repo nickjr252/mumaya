@@ -797,7 +797,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    max-width: 500px;      /* ⬅ controls form width */
+    max-width: 100px;      /* ⬅ controls form width */
     margin: 0 auto;        /* ⬅ centers the form */
 }
 
@@ -832,6 +832,7 @@ html {
 .btn-submit:hover {
     opacity: 0.9;
 }
+
 
 
 
