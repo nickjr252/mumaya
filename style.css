@@ -679,7 +679,7 @@ footer {
 
 /* SERVICES BACKGROUND SECTION */
 .services-section {
-    background-image: url("../images/services-bg.png");
+    background-image: url("images/mumaya_4.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -722,6 +722,7 @@ footer {
         padding: 2rem 1.5rem;
     }
 }
+
 
 
 
