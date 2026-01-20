@@ -964,6 +964,34 @@ html {
     color: #78c8a0;
 }
 
+/* VERTICAL MENU */
+.nav-menu {
+    display: flex;
+    flex-direction: column;   /* ⬅ one item per line */
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    width: 100%;
+}
+
+.nav-menu li a {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.7rem 1rem;
+    width: 100%;
+}
+
+.nav-menu li a:hover {
+    background: rgba(120, 200, 160, 0.12);
+    border-radius: 8px;
+}
+
+
 
 
 
