@@ -741,7 +741,7 @@ footer {
     top: -10%;
     width: 30px;
     height: 30px;
-    background-image: url("../images/leaf.png");
+    background-image: url("image/leaf.png");
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.7;
@@ -769,6 +769,7 @@ footer {
         opacity: 0;
     }
 }
+
 
 
 
