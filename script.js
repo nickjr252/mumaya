@@ -106,6 +106,13 @@ function sendToWhatsApp() {
     window.open(whatsappURL, "_blank");
 }
 
+if (!name || !message) {
+    alert("Please enter your name and message.");
+    return;
+}
+
+
+
 
 
 
