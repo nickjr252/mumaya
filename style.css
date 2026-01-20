@@ -814,7 +814,7 @@ html {
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 1rem;
-    width: 100%;
+    width: 50%;
 }
 
 .form-group input:focus,
@@ -838,6 +838,7 @@ html {
 .btn-submit:hover {
     opacity: 0.9;
 }
+
 
 
 
