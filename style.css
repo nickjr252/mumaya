@@ -633,6 +633,53 @@ footer {
 }
 
 
+/* PRICE IMAGE CARDS */
+.price-images {
+    padding: 4rem 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.price-images h1 {
+    margin-bottom: 0.5rem;
+}
+
+.price-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.price-image-card {
+    background: #fff;
+    padding: 1.2rem;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(120, 200, 160, 0.35); /* baby green shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price-image-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(120, 200, 160, 0.45);
+}
+
+.price-image-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+    .price-image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
 
 
 
