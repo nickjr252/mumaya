@@ -204,6 +204,29 @@ img {
 .slider-btn.prev { left: 1rem; }
 .slider-btn.next { right: 1rem; }
 
+/* ===== DESKTOP HERO IMPROVEMENT ===== */
+@media (min-width: 1024px) {
+  .hero.slider {
+    min-height: 85vh;
+  }
+
+  .hero.slider .slide img {
+    height: 85vh;
+    object-position: center top;
+  }
+
+  .hero-text h1 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+  }
+
+  .hero-text p {
+    font-size: 1.3rem;
+    max-width: 700px;
+  }
+}
+
+
 /* dots */
 .dots {
   position: absolute;
@@ -281,6 +304,29 @@ img {
 .card h3 {
     margin-top: 0.5rem;
 }
+
+/* ===== DESKTOP SERVICES OVERVIEW ===== */
+@media (min-width: 1024px) {
+  .service-cards {
+    gap: 3rem;
+  }
+
+  .card {
+    width: 320px;
+  }
+
+  .card img {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+}
+
 
 /* TESTIMONIALS */
 /*.testimonials {
@@ -727,6 +773,27 @@ footer {
     }
 }
 
+/* ===== DESKTOP SERVICES GRID ===== */
+@media (min-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+
+  .service-card {
+    padding: 2rem 1.8rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.35rem;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+  }
+}
+
+
 /* FALLING LEAVES ANIMATION */
 .leaves {
     position: absolute;
@@ -946,6 +1013,39 @@ html {
     transform: scale(1.15);
     opacity: 0.85;
 }
+
+/* NAV HOVER DESKTOP */
+@media (min-width: 769px) {
+  .nav-links a {
+    position: relative;
+  }
+
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #8CFF9E;
+    transition: width 0.3s ease;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+}
+
+img {
+  image-rendering: auto;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 17px;
+  }
+}
+
 
 
 
