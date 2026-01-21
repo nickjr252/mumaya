@@ -1096,6 +1096,14 @@ img {
   }
 }
 
+@media (min-width: 1024px) {
+  .hero.slider .slide img {
+    filter: contrast(1.05) saturate(1.05);
+  }
+}
+
+
+
 
 
 
