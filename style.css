@@ -1134,18 +1134,6 @@ img {
   }
 }
 
-@media (min-width: 1024px) {
-  .hero.slider,
-  .hero.slider .slides,
-  .hero.slider .slide img {
-    height: 82vh;              /* ⬅ REDUCES ZOOM */
-  }
-
-  .hero.slider .slide img {
-    object-fit: cover;         /* KEEP */
-    object-position: center 40%;
-  }
-}
 
 
 
