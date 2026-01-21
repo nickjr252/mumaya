@@ -226,6 +226,15 @@ img {
   }
 }
 
+/* ===== REDUCE HERO ZOOM (DESKTOP ONLY) ===== */
+@media (min-width: 1024px) {
+  .hero.slider .slide img {
+    object-fit: cover;
+    object-position: center 35%; /* 🔥 less zoom, more image visible */
+  }
+}
+
+
 
 /* dots */
 .dots {
@@ -1101,6 +1110,30 @@ img {
     filter: contrast(1.05) saturate(1.05);
   }
 }
+
+@media (min-width: 1024px) {
+
+  /* Shop interior */
+  .hero.slider .slide:nth-child(1) img {
+    object-position: center 40%;
+  }
+
+  /* Hair styling */
+  .hero.slider .slide:nth-child(2) img {
+    object-position: center 30%;
+  }
+
+  /* Barbing */
+  .hero.slider .slide:nth-child(3) img {
+    object-position: center 35%;
+  }
+
+  /* Nails */
+  .hero.slider .slide:nth-child(4) img {
+    object-position: center 45%;
+  }
+}
+
 
 
 
