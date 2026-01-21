@@ -1046,6 +1046,22 @@ img {
   }
 }
 
+/* ===== FIX HERO IMAGE CENTERING (DESKTOP) ===== */
+@media (min-width: 1024px) {
+  .hero.slider .slide img {
+    height: 85vh;
+    object-fit: cover;
+    object-position: center center; /* 🔥 force true center */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero.slider {
+    background: #000; /* hides edge artifacts */
+  }
+}
+
+
 
 
 
