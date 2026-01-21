@@ -1061,6 +1061,43 @@ img {
   }
 }
 
+/* ===== DESKTOP HERO HEIGHT INCREASE ===== */
+@media (min-width: 1024px) {
+
+  /* Hero container */
+  .hero.slider {
+    min-height: 90vh;   /* ⬅ makes hero taller */
+  }
+
+  /* Slides */
+  .hero.slider .slides {
+    height: 90vh;
+  }
+
+  /* Images */
+  .hero.slider .slide img {
+    height: 90vh;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  /* Text overlay */
+  .hero.slider .hero-text {
+    padding: 0 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3.3rem;
+  }
+
+  .hero-text p {
+    font-size: 1.35rem;
+    max-width: 760px;
+  }
+}
+
+
+
 
 
 
