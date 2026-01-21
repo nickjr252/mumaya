@@ -1071,12 +1071,12 @@ img {
 
   /* Slides */
   .hero.slider .slides {
-    height: 90vh;
+    height: 100vh;
   }
 
   /* Images */
   .hero.slider .slide img {
-    height: 90vh;
+    height: 100vh;
     object-fit: cover;
     object-position: center center;
   }
@@ -1101,6 +1101,7 @@ img {
     filter: contrast(1.05) saturate(1.05);
   }
 }
+
 
 
 
